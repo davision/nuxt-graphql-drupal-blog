@@ -12,12 +12,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  transition: 'fade',
-  components: {
-    Logo
-  }
+  transition: 'fade'
 }
 </script>
