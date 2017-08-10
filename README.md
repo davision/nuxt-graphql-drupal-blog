@@ -1,4 +1,4 @@
-# komuneco
+# Drupal 8 graphQL demo blog public API client
 
 > Nuxt.js project
 
