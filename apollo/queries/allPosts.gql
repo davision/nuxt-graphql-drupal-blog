@@ -1,0 +1,21 @@
+{
+  nodeQuery(limit:10, offset:0, filter:{type:"article"}) {
+    entities{
+      entityLabel
+      entityUrl {
+        path
+      }
+      ...on NodeArticle {
+        fieldImage {
+          derivative(style:thumbnail) {
+            url
+          }
+        }
+        fieldTags {
+          entityLabel
+        }
+      }
+    }
+    count
+  }
+}
