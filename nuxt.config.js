@@ -1,9 +1,5 @@
 module.exports = {
-  plugins:[
-    '~/plugins/app'
-  ],
   modules: ['@nuxtjs/apollo'],
-  
     // Give apollo module options 
   apollo: {
     networkInterfaces: {
