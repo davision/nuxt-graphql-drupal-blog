@@ -3,7 +3,7 @@
   
     <section class="section">
       <Posts v-if="nodeQuery" :posts="nodeQuery.entities" />
-      <div v-else>Loading ... </div>
+      <Loading v-else />
     </section>
   
   </div>
@@ -12,8 +12,9 @@
 <script>
 import allPosts from '~/apollo/queries/allPosts'
 import Posts from '~/components/Posts'
+import Loading from '~/components/Loading'
 export default {
-  components: { Posts },
+  components: { Posts, Loading },
   apollo: {
     nodeQuery: {
       query: allPosts

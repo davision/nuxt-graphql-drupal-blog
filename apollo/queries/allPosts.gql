@@ -2,6 +2,7 @@
   nodeQuery(limit:10, offset:0, filter:{type:"article"}) {
     entities{
       entityLabel
+      entityUuid
       entityUrl {
         path
       }

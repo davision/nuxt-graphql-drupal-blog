@@ -1,22 +1,14 @@
+<!-- Posts paginated list -->
 <template>
-  <div class="posts">
-    <div class="post" v-for="post in posts">
-      <div class="columns">
-        <div class="column is-2">
-          <img vi-if="post.fieldImage" :src="post.fieldImage.derivative.url" />
-        </div>
-        <div class="column">
-          <h3 class="title is-3">{{ post.entityLabel }}</h3>
-          <div class="body" v-html="post.body"></div>
-        </div>
-      </div>
-      <hr />
-    </div>
-  </div>
+  <section class="section">
+    <PostTeaser :key="post.entityUuid" v-for="post in posts" :post="post" />
+  </section>
 </template>
 
 <script>
+import PostTeaser from '~/components/PostTeaser'
 export default {
+  components: { PostTeaser },
   props: {
     posts: { type: Array, default: [] }
   }

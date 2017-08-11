@@ -1,8 +1,6 @@
 <template>
   <div>
-   
-    <Navigation />
-    <Header />
+    <AppHeader class="section has-text-centered" />
     <nuxt/>
   </div>
 </template>
