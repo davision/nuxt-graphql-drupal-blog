@@ -8,13 +8,16 @@
       <div class="column">
         <h3 class="title is-3">{{ post.entityLabel }}</h3>
         <div class="body" v-html="post.body"></div>
+        <ButtonLink>Read more</ButtonLink>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ButtonLink from '~/components/ButtonLink'
 export default {
+  components: { ButtonLink },
   props: {
     post: { type: Object, default: {} }
   }
