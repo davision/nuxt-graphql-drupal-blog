@@ -1,15 +1,17 @@
 <template>
   <div>
+   
     <Navigation />
-    <Logo />
+    <Header />
     <nuxt/>
   </div>
 </template>
 
 <script>
-import Navigation from '~/components/Navigation'
+import AppHeader from '~/components/AppHeader'
+import AppNavigation from '~/components/AppNavigation'
 export default {
-  components: { Navigation }
+  components: { AppHeader, AppNavigation }
 }
 </script>
 

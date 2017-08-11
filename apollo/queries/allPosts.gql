@@ -6,6 +6,7 @@
         path
       }
       ...on NodeArticle {
+        body
         fieldImage {
           derivative(style:thumbnail) {
             url
