@@ -1,11 +1,16 @@
 module.exports = {
   modules: ['@nuxtjs/apollo'],
-    // Give apollo module options 
+    // Give apollo module options
   apollo: {
     networkInterfaces: {
       default: '~/apollo/network-interfaces/default.js'
     }
   },
+
+  // Vue plugins
+  plugins: [
+    '~plugins/filters.js'
+  ],
   /*
   ** Headers of the page
   */
@@ -18,7 +23,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: '/css/bulma-0-5-0.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/bulma.css' },
     ]
   },
   /*

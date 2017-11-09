@@ -3,13 +3,14 @@
     entities {
       title: entityLabel
       uid: entityUuid
+      created: entityCreated
       url: entityUrl {
         path
       }
       ...on NodeArticle {
-        body{processed}
+        body{summary}
         fieldImage {
-          derivative(style:thumbnail) {
+          derivative(style:medium) {
             url
           }
         }

@@ -13,6 +13,7 @@
 import allPosts from '~/apollo/queries/allPosts'
 import Posts from '~/components/Posts'
 import Loading from '~/components/Loading'
+
 export default {
   components: { Posts, Loading },
   apollo: {

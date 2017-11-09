@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppHeader class="section has-text-centered" />
-    <Help />
+    <Intro />
     <nuxt/>
   </div>
 </template>
@@ -9,9 +9,9 @@
 <script>
 import AppHeader from '~/components/AppHeader'
 import AppNavigation from '~/components/AppNavigation'
-import Help from '~/components/Help'
+import Intro from '~/components/Intro'
 export default {
-  components: { AppHeader, AppNavigation, Help }
+  components: { AppHeader, AppNavigation, Intro }
 }
 </script>
 
@@ -24,10 +24,7 @@ export default {
 }
 
 .fade-enter,
-.fade-leave-to
-/* .fade-leave-active in <2.1.8 */
-
-{
+.fade-leave-to {
   opacity: 0
 }
 </style>
