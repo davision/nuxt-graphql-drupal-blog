@@ -1,7 +1,7 @@
 <!-- Posts paginated list -->
 <template>
   <section class="section">
-    <PostTeaser :key="post.entityUuid" v-for="post in posts" :post="post" />
+    <PostTeaser :key="post.uid" v-for="post in posts" :post="post" />
   </section>
 </template>
 

@@ -1,4 +1,4 @@
 import { createNetworkInterface } from 'apollo-client'
-export default createNetworkInterface({
-  uri: 'https://dev-graphql-demo-blog.pantheonsite.io/graphql'
+export default (ctx) => createNetworkInterface({
+  uri: 'http://www.davidlicen.dev/graphql'
 })

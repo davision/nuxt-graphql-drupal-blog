@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-  
+
     <section class="section">
       <Posts v-if="nodeQuery" :posts="nodeQuery.entities" />
       <Loading v-else />
     </section>
-  
+
   </div>
 </template>
 
@@ -17,9 +17,8 @@ export default {
   components: { Posts, Loading },
   apollo: {
     nodeQuery: {
-      query: allPosts
-      //  Server side rendering will work once https://github.com/nuxt-community/apollo-module/pull/10 is merged
-      //  prefetch: true, 
+      query: allPosts,
+      prefetch: true
     }
   }
 }

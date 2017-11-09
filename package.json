@@ -1,5 +1,5 @@
 {
-  "name": "drupal8-graphql-demo-blog-nuxt",
+  "name": "nuxt-graphql-drupal-blog",
   "version": "1.0.0",
   "description": "A nuxt.js client for graphql public api demo blog",
   "author": "yann <yann.boisselier@gmail.com>",
@@ -13,13 +13,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^1.0.0",
-    "axios": "^0.16.2",
+    "@nuxtjs/apollo": "^2.0.0",
+    "axios": "^0.17.0",
+    "graphql": "^0.11.7",
     "isomorphic-fetch": "^2.2.1",
-    "nuxt": "^1.0.0-rc3"
+    "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.2",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",

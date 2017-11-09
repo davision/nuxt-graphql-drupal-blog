@@ -6,8 +6,8 @@
         <img v-if="post.fieldImage" :src="post.fieldImage.derivative.url" />
       </div>
       <div class="column">
-        <h3 class="title is-3">{{ post.entityLabel }}</h3>
-        <div class="body" v-html="post.body"></div>
+        <h3 class="title is-3">{{ post.title }}</h3>
+        <div class="body" v-html="post.body.processed"></div>
         <!--<ButtonLink>Read more</ButtonLink>-->
       </div>
     </div>

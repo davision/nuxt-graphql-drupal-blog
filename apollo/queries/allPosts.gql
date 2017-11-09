@@ -1,20 +1,20 @@
 {
-  nodeQuery(limit:10, offset:0, filter:{type:"article"}) {
-    entities{
-      entityLabel
-      entityUuid
-      entityUrl {
+  nodeQuery (limit:10, offset:0, filter:{type:"article"}) {
+    entities {
+      title: entityLabel
+      uid: entityUuid
+      url: entityUrl {
         path
       }
       ...on NodeArticle {
-        body
+        body{processed}
         fieldImage {
           derivative(style:thumbnail) {
             url
           }
         }
         fieldTags {
-          entityLabel
+          entity{name}
         }
       }
     }
