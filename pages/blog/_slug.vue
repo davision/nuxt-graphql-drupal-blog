@@ -7,7 +7,7 @@ import Post from '~/components/Post'
 import postByAlias from '~/apollo/queries/postByAlias'
 export default {
   transition: 'page',
-  layout: 'default',
+  layout: 'post',
   components: { Post },
   data () {
     return {
