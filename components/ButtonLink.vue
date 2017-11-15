@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="post.url.path" @click.native="isLoading = !isLoading" :class="[buttonClass, {'is-loading' : isLoading }]">
+  <nuxt-link :to="to" @click.native="isLoading = !isLoading" :class="[buttonClass, {'is-loading' : isLoading }]">
     <slot></slot>
   </nuxt-link>
 </template>
@@ -8,7 +8,7 @@
 export default {
   props: {
     buttonClass: { type: String, default: 'button is-primary' },
-    post: { type: Object, default: [] }
+    to: { type: String | Array, default: '/' }
   },
   data () {
     return {
@@ -20,6 +20,6 @@ export default {
 
 <style scoped>
 .button {
-  margin-top: 4vh;
+  margin-top: 1rem;
 }
 </style>

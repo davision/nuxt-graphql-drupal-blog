@@ -9,7 +9,7 @@
         <h3>{{ post.title }}</h3>
         <div class="date">{{ post.created | formatDate }}</div>
         <div class="body" v-html="post.body.summary"></div>
-        <ButtonLink :post="post">Read more</ButtonLink>
+        <ButtonLink :to="{ name: 'blog-slug', params: { slug: post.url.path.replace('/', '') } }"> Read more</ButtonLink>
         <hr>
       </div>
     </div>

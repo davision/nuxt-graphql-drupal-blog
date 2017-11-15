@@ -1,0 +1,21 @@
+query route($path: String!) {
+  route(path: $path) {
+    alias
+    routed
+    path
+    nodeContext {
+      title: entityLabel
+      ... on NodeArticle {
+        body{processed}
+        image: fieldImage {
+          derivative(style:large_780px_) {
+            url
+          }
+        }
+        fieldTags {
+          entity{name}
+        }
+      }
+    }
+  }
+}

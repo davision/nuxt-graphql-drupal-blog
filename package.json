@@ -2,7 +2,7 @@
   "name": "nuxt-graphql-drupal-blog",
   "version": "1.0.0",
   "description": "A nuxt.js client for graphql public api demo blog",
-  "author": "yann <yann.boisselier@gmail.com>",
+  "author": "David <davidlicen@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node_modules/.bin/nuxt",

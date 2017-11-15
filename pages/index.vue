@@ -19,7 +19,8 @@ export default {
   apollo: {
     nodeQuery: {
       query: allPosts,
-      prefetch: true
+      prefetch: true,
+      loadingKey: 'loading'
     }
   }
 }
